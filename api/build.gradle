@@ -1,0 +1,37 @@
+dependencies {
+    compile project(':core')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('io.springfox:springfox-swagger2:2.9.2')
+    compile('io.springfox:springfox-swagger-ui:2.9.2')
+    compile('org.apache.commons:commons-lang3')
+}
+
+apply plugin: "org.sonarqube"
+
+buildscript {
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6.2"
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "dubra"
+        property "sonar.sources", "src/main/java"
+        property "sonar.projectName", "dubra"
+        property "sonar.sourceEncoding", "UTF-8"
+
+        property "sonar.host.url", "http://sonarqube.abouthere.kr"
+        property "sonar.language", "java"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.exclusions", "**/*Test*.*, **/Q*.JAVA"
+        property "sonar.test.inclusions", "**/*Test.groovy, **/*Test.java"
+        property "sonar.coverage.exclusions", "**/*Test*.*, **/Q*.java"
+    }
+}

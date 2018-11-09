@@ -1,0 +1,14 @@
+dependencies {
+    compile('org.modelmapper:modelmapper:2.3.0')
+    compile('org.springframework.boot:spring-boot-starter-data-couchbase')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('mysql:mysql-connector-java')
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

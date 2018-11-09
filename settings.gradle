@@ -1,0 +1,4 @@
+rootProject.name = 'dubra'
+include 'core'
+include 'api'
+
