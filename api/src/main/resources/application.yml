@@ -17,10 +17,7 @@
 #spring:
 #  profiles: dev
 #  datasource:
-##    url: jdbc:mysql:replication://with-place-rds-write.abouthere.kr:3306,with-place-rds-read.abouthere.kr:3306/Kakarot??useCursors=false&sendStringParametersAsUnicode=false&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&autoReconnect=true&allowMasterDownConnections=true&allowSlaveDownConnections=true&readFromMasterWhenNoSlaves=true
-#    url: jdbc:mysql:replication://with-place-rds-write.abouthere.kr:3306,with-place-rds-read.abouthere.kr:3306/Kakarot??useCursors=false&sendStringParametersAsUnicode=false&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&autoReconnect=true
-#    username: src_kakarot
-#    password: uDSnr4eZ6ZZ9
+
 #    driverClassName: com.mysql.jdbc.Driver
 #  jpa:
 #    generate-ddl: false
